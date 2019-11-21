@@ -9,3 +9,5 @@ The userChoice reducer changes the state from empty to the user's selection from
 The ***userChoice*** will be used in the Prediction component.
 
 ## waiting
+The waiting reducer changes the state of ***loading*** to true or false.
+REQUEST_READING changes the state to true and RECEIVE_READING and SHOW_ERROR changes the state to false.
