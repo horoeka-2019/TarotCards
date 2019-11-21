@@ -1,17 +1,13 @@
 import React from 'react'
 
 import ErrorMessage from './ErrorMessage'
-import LoadSubreddit from './LoadSubreddit'
-import SubredditList from './SubredditList'
 import WaitIndicator from './WaitIndicator'
+import api from '../api'
 
 const App = () => (
   <div className='app'>
     <ErrorMessage />
-    <LoadSubreddit>
-      <WaitIndicator />
-    </LoadSubreddit>
-    <SubredditList />
+    <WaitIndicator />
   </div>
 )
 
