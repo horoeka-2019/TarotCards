@@ -7,7 +7,7 @@ router.use(express.json())
 
 router.get('/', (req, res) => {
   request
-    .get('http://rws-cards-api.herokuapp.com/api/v1/')
+    .get('http://rws-cards-api.herokuapp.com/api/v1//cards/random')
     .end((err, result) => {
       if (err) {
         res.status(500).send(err.message)
