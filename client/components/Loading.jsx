@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-const WaitIndicator = (props) => {
+const Loading = (props) => {
   return props.waiting
     ? <img className='wait-indicator' src='/animated-circle.gif' />
     : null
@@ -13,4 +13,4 @@ function mapStateToProps (state) {
   }
 }
 
-export default connect(mapStateToProps)(WaitIndicator)
+export default connect(mapStateToProps)(Loading)
