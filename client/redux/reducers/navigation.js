@@ -1,6 +1,6 @@
 import NAVIGATE from '../actions/navigation'
 
-const currentPage = (state = 'listing', action) => {
+const currentPage = (state = 'tarot', action) => {
   switch (action.type) {
     case NAVIGATE:
       return action.destination
