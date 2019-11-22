@@ -8,11 +8,11 @@ import ErrorMessage from './ErrorMessage'
 const App = () => (
   <div className='app'>
     <Tarot/>
-    <Loading/>
+    {/* <Loading/>
     <Reading>
       <Prediction/>
       <ErrorMessage/>
-    </Reading>
+    </Reading> */}
   </div>
 )
 

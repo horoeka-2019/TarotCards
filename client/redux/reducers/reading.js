@@ -1,4 +1,4 @@
-import { RECEIVE_READING } from '../actions'
+import { RECEIVE_READING } from '../actions/reading'
 
 function receiveReading (state = {}, action) {
   switch (action.type) {

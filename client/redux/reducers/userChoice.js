@@ -1,4 +1,4 @@
-import CHOICE from '../actions/userChoice'
+import { CHOICE } from '../actions/userChoice'
 
 const userChoice = (state = '', action) => {
   switch (action.type) {

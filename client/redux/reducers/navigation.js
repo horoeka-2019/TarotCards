@@ -1,4 +1,4 @@
-import NAVIGATE from '../actions/navigation'
+import { NAVIGATE } from '../actions/navigation'
 
 const currentPage = (state = 'tarot', action) => {
   switch (action.type) {
