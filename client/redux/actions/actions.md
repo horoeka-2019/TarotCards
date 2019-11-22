@@ -26,3 +26,9 @@ Action type is: REQUEST_READING
 When the reading is received, it will send the action to change the state.
 Action type is: RECEIVE_READING
 Payload will be: the response received from the API.
+
+
+## fetchReading
+When the fetchReading function is called, it will dispatch the following actions and peform a get request to the internal api.
+- requestReading 
+- receiveReading (or showError)
