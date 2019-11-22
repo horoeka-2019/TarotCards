@@ -11,7 +11,7 @@ const Reading = (props) => {
   </>
 }
 
-mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     card: state.cards[0]
   }
