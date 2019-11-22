@@ -5,12 +5,17 @@ import { Container, Header } from 'semantic-ui-react'
 
 class Prediction extends Component {
   render () {
-    const predictions = ['meaning_up', 'meaning_rev']
-    const { userChoice } = this.props
+    const { userChoice, card } = this.props
+    const int = randomInt()
     return (
       <Container text>
+        <p> Your card means
+          { int ? card.meaning_up : card.meaning_rev } </p>
+
         <Header as='h2'>Your Prediction</Header>
-        <p> Your {userChoice} is {predictions[randomInt()]} </p>
+        <p> Your card indicates that {userChoice} will be  {
+          int ? 'great !' : 'not so great :('
+        } </p>
       </Container>
     )
   }
@@ -18,7 +23,8 @@ class Prediction extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    userChoice: state.userChoice
+    userChoice: state.userChoice,
+    card: state.reading.cards[0]
   }
 }
 
