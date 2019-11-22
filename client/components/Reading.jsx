@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Button } from 'semantic-ui-react'
 
 // This component will render the information returned by the api request serverside.
 // this will require that mapStatetoProps gets the data from the client state
@@ -11,10 +12,12 @@ const Reading = (props) => {
   </>
 }
 
-mapStateToProps(state) {
+function mapStateToProps(state) {
   return {
     card: state.cards[0]
   }
 }
+
+<Button>Click Here</Button>
 
 export default connect(mapStateToProps)(Reading)
