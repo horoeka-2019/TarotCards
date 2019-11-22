@@ -2,7 +2,7 @@ export const SHOW_ERROR = 'SHOW_ERROR'
 export const RECEIVE_READING = 'RECEIVE_READING'
 export const REQUEST_READING = 'REQUEST_READING'
 
-export const requestReading = (reading) => {
+export const requestReading = () => {
   return {
     type: REQUEST_READING
   }
