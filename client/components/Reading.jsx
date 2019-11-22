@@ -7,14 +7,14 @@ import { Button } from 'semantic-ui-react'
 
 const Reading = (props) => {
   return <>
-  <h1>{props.card.name}</h1>
-  <img href={`tarot-images${props.card.name_short}`} alt={props.card.desc}/>
+    <h1>{props.card.name}</h1>
+    <img href={`tarot-images${props.card.name_short}`} alt={props.card.desc} />
   </>
 }
 
-const mapStateToProps = (state) => {
+function mapStateToProps(state) {
   return {
-    card: state.cards[0]
+    card: state.reading
   }
 }
 
