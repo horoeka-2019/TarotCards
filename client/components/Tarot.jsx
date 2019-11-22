@@ -1,25 +1,26 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { Form } from 'semantic-ui-react'
+import { Form, Container } from 'semantic-ui-react'
 
 import { fetchReading } from '../redux/actions/index'
 
 class Tarot extends Component {
-  constructor () {
+  constructor() {
     super()
     this.state = {
       choice: ''
     }
     this.handleSelect = this.handleSelect.bind(this)
   }
-  handleSelect (e) {
+  handleSelect(e) {
     this.setState({
       choice: e.target.value
     })
   }
-  render () {
+  render() {
     return (
+
       <>
        <div className='mainHeader'>
          <div>
@@ -49,6 +50,7 @@ class Tarot extends Component {
       </Form>
       </div>
       </>
+
     )
   }
 }
