@@ -12,6 +12,7 @@ const Reading = (props) => {
 }
 
 function mapStateToProps (state) {
+  console.log(state.reading)
   return {
     card: state.reading.cards[0]
   }
