@@ -20,6 +20,19 @@ class Tarot extends Component {
   }
   render () {
     return (
+      <>
+       <div className='mainHeader'>
+         <div>
+           <img className='rightImage' src={'tarotheader.jpeg'} className='tarot'/>
+        </div>
+          <div>
+            <h1 className='header'>Tarot</h1>
+          </div>
+        {/* <div>
+          <img className='leftImage'src={'tarotheader.jpeg'} className='tarot'/>
+        </div> */}
+       </div>
+      <div className='form'>
       <Form onChange={this.handleSelect} onSubmit={() => this.props.fetchReading(this.state.choice)}>
         <Form.Group widths='equal'>
           <Form.Field label='Choose your category for advice' control='select'>
@@ -34,6 +47,8 @@ class Tarot extends Component {
           Submit
         </Form.Field>
       </Form>
+      </div>
+      </>
     )
   }
 }
