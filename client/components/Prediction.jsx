@@ -9,10 +9,9 @@ class Prediction extends Component {
     const int = randomInt()
     return (
       <Container text>
+        <Header as='h2'>Your Prediction</Header>
         <p> Your card means
           { int ? card.meaning_up : card.meaning_rev } </p>
-
-        <Header as='h2'>Your Prediction</Header>
         <p> Your card indicates that {userChoice} will be  {
           int ? 'great !' : 'not so great :('
         } </p>
