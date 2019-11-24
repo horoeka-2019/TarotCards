@@ -16,6 +16,7 @@ class Prediction extends Component {
         <p> Your card indicates that {userChoice} will be  {
           int ? 'great !' : 'not so great :('
         } </p>
+        
       </Container>
     )
   }
